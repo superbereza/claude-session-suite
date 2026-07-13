@@ -1,0 +1,33 @@
+{
+  "name": "claude-session-suite",
+  "description": "The full lifecycle of a Claude Code session in one marketplace: launch it (claude-remote), keep it alive (claude-session-keeper), move it between machines (claude-session-teleport)",
+  "owner": {
+    "name": "superbereza"
+  },
+  "plugins": [
+    {
+      "name": "claude-remote",
+      "description": "Launch Claude Code Remote Control sessions in a detached tmux pane and get the claude.ai/code URL",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/superbereza/claude-remote-launcher.git"
+      }
+    },
+    {
+      "name": "claude-session-keeper",
+      "description": "Persist long-running Remote Control / tmux sessions across reboots and crashes — self-register + self-heal",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/superbereza/claude-session-keeper.git"
+      }
+    },
+    {
+      "name": "claude-session-teleport",
+      "description": "Move a live Claude Code chat session between machines — clone or migrate, respawn in tmux with Remote Control and a handoff briefing",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/superbereza/claude-session-teleport.git"
+      }
+    }
+  ]
+}
