@@ -1,6 +1,6 @@
 {
   "name": "claude-session-suite",
-  "description": "The full lifecycle of a Claude Code session in one marketplace: launch it (claude-remote), keep it alive (claude-session-keeper), move it between machines (claude-session-teleport)",
+  "description": "The full lifecycle of a Claude Code session in one marketplace: spawn it (claude-remote), keep it alive (claude-session-keeper), move it between machines (claude-session-teleport)",
   "owner": {
     "name": "superbereza"
   },
