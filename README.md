@@ -16,6 +16,14 @@ three standalone tools that compose:
 > bud off fresh sessions in other folders mid-task, grab their claude.ai/code
 > URLs, and keep working — all without leaving its own session.
 
+## How they compose
+
+A typical multi-machine setup: **spawn** working sessions on a server with
+`claude-remote` (you — or a Claude that needs a helper), **register** the
+important ones with `claude-keep add` so they survive reboots, and when work
+needs to follow you — **teleport** the session to the laptop and back, history
+intact.
+
 ## Use
 
 ```text
@@ -29,11 +37,3 @@ three standalone tools that compose:
 Each plugin also works standalone and is **its own marketplace** — see the repos.
 All three share one skill-repo standard: the same `skills/` directory is consumed
 by Claude Code, Cursor, Codex and Gemini.
-
-## How they compose
-
-A typical multi-machine setup: **spawn** working sessions on a server with
-`claude-remote` (you — or a Claude that needs a helper), **register** the
-important ones with `claude-keep add` so they survive reboots, and when work
-needs to follow you — **teleport** the session to the laptop and back, history
-intact.
